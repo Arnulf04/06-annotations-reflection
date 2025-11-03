@@ -13,7 +13,7 @@ import java.util.List;
  * Created on 11/9/17.
  */
 public final class Joke {
-
+	// transfer the attributes from JSON
 	@SerializedName("id")
 	private String identifier;
 	@SerializedName("value")

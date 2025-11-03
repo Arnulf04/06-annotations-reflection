@@ -19,12 +19,11 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:$apacheCommonsLangVersion")
     implementation("org.apache.logging.log4j:log4j-api:${log4j2Version}")
     implementation("org.apache.logging.log4j:log4j-core:${log4j2Version}")
-	// Die Version 2.9.0 ist die stabile Version
+	// integration at this point
 	implementation("com.squareup.retrofit2:retrofit:3.0.0")
-	// Gson
+	// Gson - converter implement after this one
 	implementation("com.google.code.gson:gson:2.10.1")
-
-	// Der Converter MUSS dieselbe Version wie Retrofit haben
+	// converter must the same version like the retrofit
 	implementation("com.squareup.retrofit2:converter-gson:3.0.0")
 
 
