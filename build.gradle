@@ -19,6 +19,14 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:$apacheCommonsLangVersion")
     implementation("org.apache.logging.log4j:log4j-api:${log4j2Version}")
     implementation("org.apache.logging.log4j:log4j-core:${log4j2Version}")
+	// Die Version 2.9.0 ist die stabile Version
+	implementation("com.squareup.retrofit2:retrofit:3.0.0")
+	// Gson
+	implementation("com.google.code.gson:gson:2.10.1")
+
+	// Der Converter MUSS dieselbe Version wie Retrofit haben
+	implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
